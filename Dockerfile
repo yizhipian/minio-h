@@ -34,7 +34,7 @@ RUN go build --tags=kqueue,operator -ldflags "-w -s" -a -o console ./cmd/console
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.7
 MAINTAINER MinIO Development "dev@min.io"
-EXPOSE 9090
+EXPOSE 7860
 
 
 COPY --from=golayer /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
